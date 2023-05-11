@@ -1,40 +1,35 @@
-#N struct 8770-rectangle float x float c;
-#N struct 8770-pixel float x0 float y0;
-#N struct 8770-slider float x float y float w float h float c;
-#N struct 8788-rectangle float x float c;
-#N struct 8788-pixel float x0 float y0;
-#N struct 8788-slider float x float y float w float h float c;
-#N struct 8806-rectangle float x float c;
-#N struct 8806-pixel float x0 float y0;
-#N struct 8806-slider float x float y float w float h float c;
-#N struct 8835-rectangle float x float c;
-#N struct 8835-pixel float x0 float y0;
-#N struct 8835-slider float x float y float w float h float c;
-#N struct 8998-rectangle float x float c;
-#N struct 8998-pixel float x0 float y0;
-#N struct 8998-slider float x float y float w float h float c;
-#N struct 9000-slider float x float y float w float h float c;
-#N canvas 750 22 1048 996 12;
+#N struct 1023-rectangle float x float c;
+#N struct 1023-pixel float x0 float y0;
+#N struct 1023-slider float x float y float w float h float c;
+#N struct 1041-rectangle float x float c;
+#N struct 1041-pixel float x0 float y0;
+#N struct 1041-slider float x float y float w float h float c;
+#N struct 1059-rectangle float x float c;
+#N struct 1059-pixel float x0 float y0;
+#N struct 1059-slider float x float y float w float h float c;
+#N struct 1088-rectangle float x float c;
+#N struct 1088-pixel float x0 float y0;
+#N struct 1088-slider float x float y float w float h float c;
+#N struct 1107-rectangle float x float c;
+#N struct 1107-pixel float x0 float y0;
+#N struct 1107-slider float x float y float w float h float c;
+#N struct 1109-slider float x float y float w float h float c;
+#N canvas 2265 2 1048 996 12;
 #X declare -path lib;
 #X obj 75 39 declare -path lib;
 #X obj 7 184 orgelmodul \$0 orgel01;
 #N canvas 2774 117 976 562 init 0;
 #X obj 17 137 s \$0-colors;
 #X obj 17 24 loadbang;
-#X obj 17 50 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000;
+#X obj 17 50 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X msg 17 72 333 959 995 599 779 595 977 888 888 888;
-#X msg 17 98 0 \$1 \$2 \$2 \$3 \$2 \$4 \$3 \$5 \$2 \$6 \$4 \$7 \$3
-\$8 \$5 \$9 \$2 \$2 \$2 \$3 \$2 \$4 \$3 \$5 \$2 \$6 \$4 \$7 \$3 \$8
-\$5 \$9 \$2;
+#X msg 17 98 0 \$1 \$2 \$2 \$3 \$2 \$4 \$3 \$5 \$2 \$6 \$4 \$7 \$3 \$8 \$5 \$9 \$2 \$2 \$2 \$3 \$2 \$4 \$3 \$5 \$2 \$6 \$4 \$7 \$3 \$8 \$5 \$9 \$2;
 #X obj 286 228 \$0;
 #X floatatom 286 252 5 0 0 0 - - - 0;
-#X obj 290 203 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
-#000000 #000000;
+#X obj 290 203 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X msg 20 279 \; \$1-vu-colors const 357;
 #X obj 20 248 \$0;
-#X obj 336 222 vsl 15 128 1 16 1 0 empty empty empty 0 -9 0 10 #fcfcfc
-#000000 #000000 0 1;
+#X obj 336 222 vsl 15 128 1 16 1 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X floatatom 342 362 5 0 0 0 - - - 0;
 #X obj 335 162 loadbang;
 #X msg 335 191 1;
@@ -55,5 +50,5 @@
 #X connect 13 0 10 0;
 #X restore 407 585 pd init;
 #X obj 451 73 pd~ -ninsig 1 -noutsig 1 -fifo 20;
-#X msg 451 46 pd~ start lib/orgelmodul01.pd \$0 orgel01;
+#X msg 451 46 pd~ start lib/orgelmodul-dsp.pd \$0 orgel01;
 #X connect 4 0 3 0;

@@ -92,8 +92,6 @@ static void slide_tilde_reset(t_slide_tilde *x)
   x->x_last_y = (t_sample) 0;
 }
 
-
-
 void slide_tilde_setup(void)
 {
     slide_tilde_class = class_new(gensym("slide~"), slide_tilde_new, 0,
