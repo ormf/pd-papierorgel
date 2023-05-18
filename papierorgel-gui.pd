@@ -158,7 +158,7 @@
 #N struct 2061-pixel float x0 float y0;
 #N struct 2061-slider float x float y float w float h float c;
 #N struct 2063-slider float x float y float w float h float c;
-#N canvas 1922 374 1862 678 12;
+#N canvas 1676 2 226 985 12;
 #X declare -path lib;
 #X listbox 141 623 40 0 0 0 - - - 36;
 #X obj 7 648 list prepend list;
