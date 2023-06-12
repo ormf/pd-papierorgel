@@ -158,7 +158,7 @@
 #N struct 2061-pixel float x0 float y0;
 #N struct 2061-slider float x float y float w float h float c;
 #N struct 2063-slider float x float y float w float h float c;
-#N canvas 691 2 1128 1015 12;
+#N canvas 1920 2 1916 1015 12;
 #X declare -path lib;
 #X listbox 141 623 40 0 0 0 - - - 36;
 #X obj 7 648 list prepend list;
@@ -168,7 +168,7 @@
 #X obj 371 5 orgelmodul \$0 orgel03 3;
 #X obj 739 5 orgelmodul \$0 orgel05 5;
 #X obj 555 5 orgelmodul \$0 orgel04 4;
-#N canvas 702 2 847 991 osc-handling 0;
+#N canvas 702 2 847 991 osc-handling 1;
 #X obj 37 62 oscparse;
 #X obj 36 87 list trim;
 #X obj 151 139 s \$0-ctl;
@@ -266,6 +266,7 @@
 #X msg 119 88 preset-ctl preset-no 10;
 #X msg 243 404 preset-ctl next-preset;
 #X obj 127 885 print oscformat-out;
+#X obj 502 263 print osc-in;
 #X connect 0 0 1 0;
 #X connect 1 0 36 0;
 #X connect 3 0 6 0;
@@ -273,7 +274,6 @@
 #X connect 4 0 22 0;
 #X connect 4 0 12 0;
 #X connect 4 0 26 0;
-#X connect 4 0 44 0;
 #X connect 6 0 24 0;
 #X connect 6 1 9 1;
 #X connect 7 0 8 0;
