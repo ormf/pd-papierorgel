@@ -168,7 +168,7 @@
 #X obj 371 5 orgelmodul \$0 orgel03 3;
 #X obj 739 5 orgelmodul \$0 orgel05 5;
 #X obj 555 5 orgelmodul \$0 orgel04 4;
-#N canvas 702 2 847 991 osc-handling 1;
+#N canvas 702 2 847 991 osc-handling 0;
 #X obj 37 62 oscparse;
 #X obj 36 87 list trim;
 #X obj 151 139 s \$0-ctl;
