@@ -1,4 +1,4 @@
-#N canvas 0 125 793 693 12;
+#N canvas 2304 40 733 514 12;
 #X obj 39 34 nbx 3 30 0 127 0 0 \$0-preset-no \$0-preset-no empty 0 -10 0 24 #fcfcfc #000000 #000000 0 256;
 #X obj 166 46 bng 20 250 50 0 \$0-prev-preset \$0-prev-preset prev-preset 30 10 0 12 #fcfcfc #000000 #000000;
 #X obj 166 21 bng 20 250 50 0 \$0-next-preset \$0-next-preset next-preset 30 10 0 12 #fcfcfc #000000 #000000;
@@ -27,14 +27,14 @@
 #X obj 270 408 list prepend preset-ctl;
 #X obj 270 433 list trim;
 #X obj 270 458 s \$1-ctl;
-#X obj 586 411 r \$1-preset-ctl;
-#X obj 588 475 route preset-no;
-#X obj 588 528 s \$0-preset-no;
-#X msg 588 500 set \$1;
+#X obj 561 257 r \$1-preset-ctl;
+#X obj 561 289 route preset-no;
+#X obj 561 342 s \$0-preset-no;
+#X msg 561 314 set \$1;
 #X obj 539 146 r \$0-preset-no;
 #X floatatom 539 171 5 0 0 0 - - - 0;
 #X msg 539 196 preset-no \$1;
-#X obj 551 500 bng 20 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 524 314 bng 20 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X connect 3 0 6 0;
 #X connect 4 0 5 0;
 #X connect 5 0 19 0;

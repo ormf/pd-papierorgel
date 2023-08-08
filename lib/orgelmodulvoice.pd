@@ -1,4 +1,4 @@
-#N canvas 295 17 639 736 12;
+#N canvas 295 17 639 965 12;
 #X obj 18 10 inlet;
 #X obj 94 206 * \$1;
 #X obj 19 289 bp~, f 22;
@@ -46,9 +46,9 @@
 #X text 252 186 delay;
 #X obj 18 52 route gain base-freq q delay level osc-level, f 66;
 #X obj 93 576 env~ 8192;
-#X floatatom 93 627 5 0 0 0 - - - 0;
-#X obj 93 704 s \$2-measure-data;
-#X obj 93 601 change;
+#X floatatom 93 781 5 0 0 0 - - - 0;
+#X obj 93 866 s \$2-measure-data;
+#X obj 93 755 change;
 #X obj 300 548 - 100;
 #X obj 301 577 vu 15 120 empty empty -1 -8 0 10 #404040 #000000 1 0;
 #X obj 170 232 line;
@@ -66,8 +66,8 @@
 #X obj 306 106 expr 2000/$f1;
 #X obj 18 478 leveler~ 140 140, f 48;
 #X obj 84 388 route ramp-up ramp-down min-amp max-amp exp-base;
-#X msg 93 678 mlevel \$2 \$1;
-#X obj 93 653 pack 0 \$1;
+#X msg 93 832 mlevel \$2 \$1;
+#X obj 93 807 pack 0 \$1;
 #X floatatom 84 420 5 0 0 0 - - - 0;
 #X floatatom 150 421 5 0 0 0 - - - 0;
 #X floatatom 217 421 5 0 0 0 - - - 0;
@@ -75,6 +75,9 @@
 #X floatatom 350 422 5 0 0 0 - - - 0;
 #X obj 18 86 n-scale 0 90 1;
 #X obj 171 81 n-scale 0 50 1;
+#X obj 93 601 * 100;
+#X obj 93 626 int;
+#X obj 93 651 / 100;
 #X connect 0 0 31 0;
 #X connect 1 0 3 0;
 #X connect 2 0 5 0;
@@ -111,8 +114,8 @@
 #X connect 31 4 16 0;
 #X connect 31 5 41 0;
 #X connect 31 6 52 0;
-#X connect 32 0 35 0;
 #X connect 32 0 36 0;
+#X connect 32 0 62 0;
 #X connect 33 0 54 0;
 #X connect 35 0 33 0;
 #X connect 36 0 37 0;
@@ -144,3 +147,6 @@
 #X connect 59 0 51 5;
 #X connect 60 0 13 0;
 #X connect 61 0 15 0;
+#X connect 62 0 63 0;
+#X connect 63 0 64 0;
+#X connect 64 0 35 0;
