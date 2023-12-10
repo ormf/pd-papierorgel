@@ -1,4 +1,4 @@
-gui ip localhost 3010;
+gui ip localhost 3012;
 orgel01 ip localhost 3031;
 orgel02 ip localhost 3032;
 orgel03 ip localhost 3033;
