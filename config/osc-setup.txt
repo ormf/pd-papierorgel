@@ -9,3 +9,15 @@ orgel07 ip localhost 3037;
 orgel08 ip localhost 3038;
 orgel09 ip localhost 3039;
 orgel10 ip localhost 3040;
+orgel01 out 1;
+orgel02 out 2;
+orgel03 out 1;
+orgel04 out 2;
+orgel05 out 1;
+orgel06 out 2;
+orgel07 out 1;
+orgel08 out 2;
+orgel09 out 1;
+orgel10 out 2;
+
+
