@@ -168,7 +168,7 @@
 #X obj 371 5 orgelmodul \$0 orgel03 3;
 #X obj 739 5 orgelmodul \$0 orgel05 5;
 #X obj 555 5 orgelmodul \$0 orgel04 4;
-#N canvas 1134 2 847 991 osc-handling 0;
+#N canvas 1134 2 847 991 osc-handling 1;
 #X obj 95 56 oscparse;
 #X obj 94 81 list trim;
 #X obj 84 554 oscformat;
@@ -295,6 +295,7 @@
 #X obj 495 92 list trim;
 #X obj 496 27 netreceive -b -u 3012;
 #X text 497 2 receive from dsp modules;
+#X obj 32 45 bng 20 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X connect 0 0 1 0;
 #X connect 1 0 34 0;
 #X connect 2 0 10 0;
@@ -320,6 +321,7 @@
 #X connect 18 0 16 1;
 #X connect 19 0 0 0;
 #X connect 19 0 60 0;
+#X connect 19 0 65 0;
 #X connect 20 0 3 0;
 #X connect 22 0 5 0;
 #X connect 22 1 23 0;
