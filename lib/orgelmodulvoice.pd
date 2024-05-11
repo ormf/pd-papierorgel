@@ -1,4 +1,4 @@
-#N canvas 999 2 917 1014 12;
+#N canvas 999 2 917 975 12;
 #X obj 18 10 inlet;
 #X obj 94 206 * \$1;
 #X floatatom 94 231 5 0 0 0 - - - 0;
@@ -101,7 +101,9 @@
 #X connect 5 0 1 0;
 #X restore 687 370 pd bwcttoq;
 #X floatatom 687 395 5 0 0 0 - - - 0;
-#X obj 18 300 cyclone/reson~ 1 440 10;
+#X obj 18 300 ./reson~ 1 440 10;
+#X obj 597 390 line;
+#X msg 597 364 \$1 50;
 #X connect 0 0 30 0;
 #X connect 1 0 2 0;
 #X connect 2 0 20 0;
@@ -174,6 +176,7 @@
 #X connect 61 0 9 0;
 #X connect 62 0 12 0;
 #X connect 63 0 73 0;
+#X connect 63 0 77 0;
 #X connect 64 0 70 0;
 #X connect 65 0 66 0;
 #X connect 66 0 70 0;
@@ -181,8 +184,9 @@
 #X connect 68 0 18 0;
 #X connect 69 0 14 0;
 #X connect 70 0 63 0;
-#X connect 71 0 75 3;
 #X connect 72 0 71 0;
 #X connect 73 0 74 0;
 #X connect 74 0 72 0;
 #X connect 75 0 4 0;
+#X connect 76 0 75 4;
+#X connect 77 0 76 0;

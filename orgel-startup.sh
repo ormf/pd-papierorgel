@@ -1,6 +1,6 @@
 #!/bin/bash
-DIR=$HOME/work/programmieren/pd/papierorgel-pd
-
+# DIR=$HOME/work/programmieren/pd/papierorgel-pd
+DIR=$HOME/papierrohrorgel/pd-papierorgel
 # pd -rt -jack -audiobuf 0 -blocksize 32 -channels 10 -send "id orgel01" $DIR/orgelmodul-dsp-osc.pd &
 # pd -rt -jack -audiobuf 0 -blocksize 32 -channels 10 -send "id orgel02" $DIR/orgelmodul-dsp-osc.pd &
 # pd -rt -jack -audiobuf 0 -blocksize 32 -channels 10 -send "id orgel03" $DIR/orgelmodul-dsp-osc.pd &

@@ -1,9 +1,9 @@
-#N canvas 136 63 524 306 12;
+#N canvas 136 63 524 613 12;
 #X obj 33 19 inlet~;
-#X obj 33 261 outlet~;
+#X obj 34 283 outlet~;
 #X obj 427 99 f \$1;
 #X obj 480 97 f \$2;
-#X obj 34 229 *~;
+#X obj 35 251 *~;
 #X obj 521 98 f \$3;
 #X obj 448 19 loadbang;
 #X obj 448 44 bng 20 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
@@ -122,6 +122,7 @@
 #X obj 91 19 inlet gain;
 #X floatatom 315 69 5 0 0 0 - - - 0;
 #X text 365 71 bwo;
+#X obj 35 225 biquad~;
 #X connect 0 0 12 0;
 #X connect 2 0 9 0;
 #X connect 3 0 10 0;
@@ -135,8 +136,9 @@
 #X connect 9 0 4 1;
 #X connect 10 0 13 0;
 #X connect 11 0 13 1;
-#X connect 12 0 4 0;
+#X connect 12 0 22 0;
 #X connect 13 0 12 0;
+#X connect 13 0 22 0;
 #X connect 14 0 13 2;
 #X connect 15 0 14 0;
 #X connect 15 0 20 0;
@@ -144,3 +146,4 @@
 #X connect 17 0 11 0;
 #X connect 18 0 10 0;
 #X connect 19 0 9 0;
+#X connect 22 0 4 0;
